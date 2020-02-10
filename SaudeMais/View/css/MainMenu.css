@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    /*background-image: url('../../Backgrounds/menu1.jpg');
+    background-position: 50% 35%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;*/
+    width: 100%;
+    height: 50px;
+    background-color:rgba(0, 0, 0, .85);
+    position: absolute;
+}
+
+.logo {
+    float: right;
+    width: 100px;
+    height: 35px;
+    margin: 8px 20px 0 40px;
+}
+
+.links {
+    float: right;
+}
+
+ol li {
+    display: inline-block;
+}
+
+#contato, #sobre {
+    color: #fff;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 8px 30px 0 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+
+#git, #linkedin {
+    color: #fff;
+    padding: 4px;
+    width: 20px;
+    height: 20px;
+    line-height: 12px;
+    text-align: center;
+    margin: 8px 20px 100px -10px;
+    border: solid .8px;
+    border-radius: 14px;
+    border-bottom-width: initial;
+    border-block-start-style: hidden;
+}
+
+#linkedin:hover {
+    color: dodgerblue;
+}
+
+
+#git:hover {
+    color: orangered;
+}
+
+#sobre:hover {
+    color: orangered;
+    text-decoration: none;
+}
+
+#contato:hover {
+    color: orangered;
+    text-decoration: none;
+}
+
+body {
+    /*(background-image: url("../CSS/background2.jpg");*/
+    background-size: 100%;
+}
+
+.menu_icon {
+    position: fixed;
+    font-size: 23px;
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    color: darkgray;
+    cursor: pointer;
+    transition: all .45s;
+    left: 0px;
+    top: 0;
+}
+
+.menu_icon:hover {
+    color: orangered;
+}
+#checkbox {
+    display: none;
+}
+
+.side_menu {
+    height: 100%;
+    position: fixed;
+    background-color: #222;
+    overflow: hidden;
+    transition: all .3s;
+}
+
+
+#main {
+    width: 200px;
+    left: -200px;
+}
+
+ul {
+    list-style: none;
+}
+
+.img_user {
+    padding: 10px;
+    top: 100px;
+    margin-top: 1px;
+    text-align: center;
+    margin-left: 20px;
+    
+}
+
+ul li b {
+    font-size: 11px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    text-align: center;
+    display: block;
+}
+
+ul li a {
+    display: block;
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+    border-bottom: solid .019px #222;
+    color: #fff;
+    text-decoration: none;
+    transition: all .3s;
+    font-weight: 400;
+}
+
+ul li a #plus {
+    
+    font-size: 10px; 
+    color: red; 
+    padding-left: 1.5px;
+    animation: spin 3s linear infinite;
+}
+
+
+
+ul li a:hover {
+    color: orangered;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+ul li span {
+    float: right;
+    padding-right: 1px;
+}
+
+.voltar {
+    background-color: #111;
+    border-left: solid 4px #444;
+}
+
+.background{
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   background-color: rgba(0, 0, 0, 0.6);
+   position: fixed;
+   display: none;
+}
+
+#checkbox:checked ~ .background {
+    display: none; /* block pra deixar o fundo escuro e desabilitado */
+}
+
+#checkbox:checked ~ #main {
+    transform: translateX(200px);
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.4);
+}
+
+#checkbox:checked ~ .menu_icon {
+    transform: translateX(200px);
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    display: inline;
+    font-size: 10PX;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#perfil, #mini_anamnese, #minha_gestacao, #saude_publica {
+    width: 200px;
+    top: 138px;
+    left: -200px;
+}
+
+#perfil:target,
+#mini_anamnese:target,
+#minha_gestacao:target,
+#saude_publica:target {
+    transform: translateX(200px);
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.4);
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 5px;
+    width: 100%;
+    /*background-color: red;
+    color: white;*/
+    text-align: center;
+}
+
+
+p {
+    text-align: center;
+    font-size: 9pt;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#footericon {
+    display: block;
+    width: 4%;
+    height: 4%;
+    margin: 5px auto;
+}
+
+
+
+@keyframes spin{
+    0% {
+        transform: rotate(-360deg);
+        
+    }
+    50% {
+        transform: none;
+    }
+    100%{
+        transform: none;
+    }
+}

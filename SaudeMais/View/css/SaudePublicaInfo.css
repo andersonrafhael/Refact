@@ -1,0 +1,13 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    padding-top: 70px;
+    width: 45%;
+}
+
+.container h2 {
+    text-align: center;
+}

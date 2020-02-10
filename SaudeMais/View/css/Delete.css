@@ -1,0 +1,46 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+button {
+    display: line;
+    height: 25px;
+    width: 100px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-size: 10pt;
+    background-color: orangered;
+    cursor: pointer;
+    left: 45%;
+}
+
+button:hover {
+    color: #fff;
+}
+
+body {
+    background-image: url("../../Backgrounds/triste.png");
+    background-attachment: fixed;
+    background-size: 10%;
+    background-repeat: no-repeat;
+    position: absolute;
+    background-position-x: center;
+    background-position-y: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+div#corpo_delete {
+    /*background-color: aqua;*/
+    width: 480px;
+    margin: 80px auto 0px auto;
+}
+
+div#corpo_delete h2 {
+    text-align: center;
+    padding: 10px;
+}
