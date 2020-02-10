@@ -1,1 +1,9 @@
+Projeto de Refatoramento
 
+Foi implementado, na classe Connection em Models, o Design Pattern Singleton, uma vez que a chamada de conexão com o banco de dados
+é feita recorrentemente na utilização do projeto SaudeMais. 
+Além do Singleton, a ideia de "Clean Code" foi aplicada em todo projeto, eliminando códigos comentados, lazy class, atributos vazios e etc
+A redução de estruturas de decisão não pode ser mais efetiva pelo fato do projeto estar funcionando com o Padrão de Arquitetura MVC
+
+O projeto completo está upado no repositório SaúdeMais (Esta pasta do repositório Refact possui apenas os códigos do projeto, para mostrar
+os refatoramentos)
