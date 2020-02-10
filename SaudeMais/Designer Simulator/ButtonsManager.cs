@@ -70,44 +70,26 @@ public class ButtonsManager : MonoBehaviour
     }
     
     public void OpenSelancerCanvas() {
-        //CommandInvoker OpenClose = new CommandInvoker();
-        //OpenClose.OpenCloseCanvas(selancerCanvas, state);
-        selancerCanvas.SetActive(true);
-    }
-
-    public void CloseSelancerCanvas()
-    {
-        selancerCanvas.SetActive(false);
-    }
-
-    public void OpenShopCanvas()
-    {
-        shopCanvas.SetActive(true);
+        CommandInvoker OpenClose = new CommandInvoker();
+        OpenClose.OpenCloseCanvas(selancerCanvas, state);
     }
 
     public void CloseShopCanvas()
     {
-        shopCanvas.SetActive(false);
+        CommandInvoker OpenClose = new CommandInvoker();
+        OpenClose.OpenCloseCanvas(shopCanvas, state);
     }
 
-    public void OpenEnergyCanvas()
+    public void OpenCloseEnergyCanvas()
     {
-        energyCanvas.SetActive(true);
+        CommandInvoker OpenClose = new CommandInvoker();
+        OpenClose.OpenCloseCanvas(energyCanvas, state);
     }
 
-    public void CloseEnergyCanvas()
+    public void OpenCloseInventoryCanvas()
     {
-        energyCanvas.SetActive(false);
-    }
-
-    public void OpenInventoryCanvas()
-    {
-        inventoryCanvas.SetActive(true);
-    }
-
-    public void CloseInventoryCanvas()
-    {
-        inventoryCanvas.SetActive(false);
+        CommandInvoker OpenClose = new CommandInvoker();
+        OpenClose.OpenCloseCanvas(inventoryCanvas, state);
     }
 
     public void OpenListView()
