@@ -61,8 +61,11 @@ public class ButtonsManager : MonoBehaviour
         }
     }
 
-    #region Open and Close Canvas
 
+    // Neste trecho do código, foi aplicado o Design Patter Command
+    // O código antes do pattern está comentado logo abaixo
+    #region Open and Close Canvas
+    
     public void OpenCloseSelancerCanvas(bool state) {
         CommandInvoker OpenClose = new CommandInvoker();
 
@@ -70,8 +73,32 @@ public class ButtonsManager : MonoBehaviour
     }
     
     public void OpenSelancerCanvas() {
-        //CommandInvoker OpenClose = new CommandInvoker();
-        //OpenClose.OpenCloseCanvas(selancerCanvas, state);
+        CommandInvoker OpenClose = new CommandInvoker();
+        OpenClose.OpenCloseCanvas(selancerCanvas, state);
+    }
+
+    public void CloseShopCanvas()
+    {
+        CommandInvoker OpenClose = new CommandInvoker();
+        OpenClose.OpenCloseCanvas(shopCanvas, state);
+    }
+
+    public void OpenCloseEnergyCanvas()
+    {
+        CommandInvoker OpenClose = new CommandInvoker();
+        OpenClose.OpenCloseCanvas(energyCanvas, state);
+    }
+
+    public void OpenCloseInventoryCanvas()
+    {
+        CommandInvoker OpenClose = new CommandInvoker();
+        OpenClose.OpenCloseCanvas(inventoryCanvas, state);
+    }
+    
+
+/*
+    
+    public void OpenSelancerCanvas() {
         selancerCanvas.SetActive(true);
     }
 
@@ -108,7 +135,7 @@ public class ButtonsManager : MonoBehaviour
     public void CloseInventoryCanvas()
     {
         inventoryCanvas.SetActive(false);
-    }
+    } */
 
     public void OpenListView()
     {
