@@ -1,1 +1,8 @@
+Projeto de Refatoramento
 
+O arquivo Jogador.cs implementa o Design Pattern Command para mover o jogador de um lado para o outro
+A princípio não é grande coisa, visto que o jogador só possui apenas 2 movimentos (esquerda e direita), mas caso fosse um jogo
+onde o personagem possui diversos comandos, como esquerda, direita, cima, baixo, expandir, saltar, voltar ao normal, etc.
+o padrão se torna extremamente útil
+
+O protótipo do jogo foi apresentado em sala
