@@ -1,1 +1,4 @@
+Projeto de Refatoramento
 
+A parte do código que foi refatorada foi a gerência dos botões do jogo The Designer Simulator (ButtonsManager.cs, onde foi aplicado o padrão command 
+para abrir e fechar alguns Canvas
